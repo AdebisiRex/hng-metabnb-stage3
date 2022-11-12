@@ -11,9 +11,9 @@ const MetabnbNFTs = () => {
     
       <div className="h-screen bg-primary flex items-center">
         <div className="flex items-center mx-24  h-full">
-          <div className=" text-white w-1/3">
+          <div className=" text-white text-center md:text-left md:w-1/3">
             <h1 className="text-4xl font-bold mb-8">Metabnb NFTs</h1>
-            <p className="text-sm leading-8 mb-8">
+            <p className="text-md leading-8 mb-8">
               Discover our NFT gift cards collection. Loyal customers gets
               amazing gift cards which are traded as NFTs. These NFTs gives our
               customer access to loads of our exclusive services{" "}
@@ -23,7 +23,7 @@ const MetabnbNFTs = () => {
               Learn more
             </button>
           </div>
-          <div className=" h-full relative w-2/3 z-0">
+          <div className="hidden md:block h-full relative w-2/3 z-0">
             <img
               className="absolute right-24 top-32 w-[378px]"
               src={img1}

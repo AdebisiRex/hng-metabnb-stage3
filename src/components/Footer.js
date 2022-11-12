@@ -10,12 +10,12 @@ const Footer = () => {
   return (
     <div className=" bg-dark py-8  ">
       <div className=" container text-center md:text-left grid grid-cols-12 items-center h-full">
-        <div className=" text-white col-span-12 lg:col-span-4">
+        <div className=" order-last md:order-first text-white col-span-12 lg:col-span-4">
           <div className="mb-16 mt-4">
             <img className="inline-block" src={metalogo} alt="" />
             <img className="ml-2 inline-block" src={metabnb} alt="" />
           </div>
-          <div className="flex justify-center mb-12">
+          <div className="flex md:justify-start justify-center mb-12">
             <img className="mr-8" src={facebook} alt="" />
             <img className="mr-8" src={instagram} alt="" />
             <img className="mr-8" src={twitter} alt="" />

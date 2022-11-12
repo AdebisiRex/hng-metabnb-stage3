@@ -8,13 +8,17 @@ import Navbar from "./Navbar";
 import mbToken from "../assets/mbtoken-white.png";
 import metamask from "../assets/metamask-white.png";
 import opensea from "../assets/opensea-white.png";
+import Modal from "./Modal";
 
 const Hero = () => {
   return (
-    <div className="relative text-redRose h-screen bg-gray-50 md:pt-4 p-1 pt-2">
+    <div className="relative text-redRose h-screen md:pt-4 p-1 pt-2">
+      <div className="container">
       <Navbar />
       <HeroMain />
-      <div className="p-1 bottom-0 w-full absolute bg-primary md:flex justify-center md:justify-around items-center ">
+      <Modal/>
+      </div>
+      <div className="absolute p-1 left-0 right-0 bottom-0 w-full  bg-primary md:flex justify-center md:justify-around items-center ">
         <div>
           <img className="md:w-[215px] w-36 md:mb-0 mb-2 mx-auto" src={mbToken} alt="" />
         </div>

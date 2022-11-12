@@ -17,8 +17,11 @@ const Inspiration = () => {
   return (
     <div className='md:py-12 py-2 container  '>
         <h1 className='font-bold text-2xl  md:text-4xl text-center mb-8 '>Inspiration for your next adventure</h1>
+        <div className=''>
+
+        </div>
        
-       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:grid-cols-4 lg:gap-4 md:gap-3 sm:gap-2 gap-1 p-2">
+       <div className="card-container p-2">
         
         {imageArray.map((item, id)=><Card key={id} img={item}/>)}
         

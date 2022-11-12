@@ -3,6 +3,7 @@ import React, { useState } from "react";
 //images
 import metalogo from "../assets/metalogo.png";
 import metabnb from "../assets/metabnb.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="relative z-10 top-4 lg:mx-24  md:mx-12 p-2  flex flex-wrap md:flex-no-wrap  md:p-0  items-center justify-between "
+        className="relative z-10 top-4 px-4  p-2  flex flex-wrap md:flex-no-wrap  md:p-0  items-center justify-between "
         role="navigation"
       >
         <div title="MetaBNB Home" className="flex items-center relative">
@@ -42,13 +43,17 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div className={`md:shadow-transparent p-2 md:p-0  bg-gray-50 md:bg-0 w-full lg:w-auto lg:flex-grow lg:flex md:items-center ${nav?"":"hidden"}`}>
+        <div
+          className={`md:shadow-transparent p-2 md:p-0  md:bg-0 w-full lg:w-auto lg:flex-grow lg:flex md:items-center ${
+            nav ? "" : "hidden"
+          }`}
+        >
           <ul className="flex flex-col mx-auto lg:flex-row md:items-center text-xl">
             <li className=" block hover:opacity-70 py-1 px-2 md:px-4 md:text-lg lg:text-xl">
               Home
             </li>
             <li className=" block hover:opacity-70 py-1 px-2 md:px-4 md:text-lg lg:text-xl">
-              Place to Stay
+              <Link to="/place-to-stay">Place to Stay</Link>
             </li>
             <li className="  block hover:opacity-70 py-1 px-2 md:px-4 md:text-lg lg:text-xl">
               NFTs
@@ -58,7 +63,11 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <button className="lg:px-10 lg:px-6 lg:w-auto w-full lg:py-4 py-2 bg-primary text-white hover:bg-white hover:border-primary hover:border-2 hover:text-primary transition-all duration-500 ease-in  rounded-xl">
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            className="lg:px-10 md:px-6 lg:w-auto w-full lg:py-4 py-2 bg-primary text-white hover:opacity-50 transition-all duration-500 ease-in  rounded-xl"
+          >
             Connect Wallet
           </button>
         </div>

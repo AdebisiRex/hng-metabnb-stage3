@@ -9,7 +9,7 @@ import img4 from "../assets/image 5.png";
 const HeroMain = () => {
   return (
     <>
-    <div className="md:grid mt-24 container px-2 items-center grid-cols-12 md:gap-16 gap-4">
+    <div className="md:grid mt-24  px-2 items-center grid-cols-12 md:gap-16 gap-4">
         <div className="lg:col-span-8 md:col-span-9 ">
           <h1 className=" mb-10 text-4xl lg:text-6xl leading-snug">
             Rent a <span className="text-primary font-semibold">Place</span>{" "}
@@ -24,7 +24,7 @@ const HeroMain = () => {
 
           <div className="rounded-xl  w-3/4 border overflow-hidden border-5 border-gray-300">
             <input
-              className="w-2/3 px-4"
+              className="w-2/3 p-2 focus:text-primary px-4"
               type="text"
               placeholder="Search for location"
             />
