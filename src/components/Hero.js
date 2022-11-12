@@ -11,19 +11,19 @@ import opensea from "../assets/opensea-white.png";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen bg-gray-50 pt-12">
+    <div className="relative text-redRose h-screen bg-gray-50 md:pt-4 p-1 pt-2">
       <Navbar />
       <HeroMain />
-      <div className="p-1 bottom-0 w-full absolute bg-primary flex justify-around items-center ">
+      <div className="p-1 bottom-0 w-full absolute bg-primary md:flex justify-center md:justify-around items-center ">
         <div>
-          <img className="w-[215px]" src={mbToken} alt="" />
+          <img className="md:w-[215px] w-36 md:mb-0 mb-2 mx-auto" src={mbToken} alt="" />
         </div>
         <div>
-          <img className="w-[214px]"  src={metamask} alt="" />
+          <img className="md:w-[214px] w-36 md:mb-0 mb-2 mx-auto"  src={metamask} alt="" />
         </div>
         <div>
 
-        <img className="w-[200px]" src={opensea} alt="" />
+        <img className="md:w-[200px] w-36 md:mb-0 mb-2 mx-auto" src={opensea} alt="" />
         </div>
       </div>
     </div>

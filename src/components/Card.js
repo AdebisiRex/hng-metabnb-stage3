@@ -7,7 +7,7 @@ import badge from "../assets/badge.png"
 const Card = ({img}) => {
     
   return (
-    <div className=' relative rounded-xl border p-4'>
+    <div className='relative rounded-xl border p-4'>
         <img className='w-full mb-2' src={img} alt="" />
         {/* <img className='absolute top-2 right-2' src={badge} alt="" /> */}
         <div className='flex justify-between mb-2'>

@@ -1,29 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 
 //images
 import metalogo from "../assets/metalogo.png";
 import metabnb from "../assets/metabnb.png";
 
-const Navbar = () => {
-  const [nav, setnav] = useState(false);
-
+const Test = () => {
   return (
-    <>
-      <nav
-        className="relative z-10 top-4 lg:mx-24  md:mx-12 p-2  flex flex-wrap md:flex-no-wrap  md:p-0  items-center justify-between "
-        role="navigation"
-      >
-        <div title="MetaBNB Home" className="flex items-center relative">
+    <nav class="shadow" role="navigation">
+      <div class="container mx-auto p-4 flex flex-wrap items-center ">
+        {/* Logo */}
+        <div class="mr-4 md:mr-8">
           <img className="inline-block" src={metalogo} alt="" />
           <img className="inline-block ml-2" src={metabnb} alt="" />
         </div>
-
-        <div title="Toggle Navbar" className="lg:hidden">
-          <button
-            class=" text-primary border-0 "
-            type="button"
-            onClick={() => setnav(!nav)}
-          >
+        {/* Trigger Button */}
+        <div class="ml-auto md:hidden">
+          <button class="text-primary border-0 " type="button">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -42,29 +34,46 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div className={`md:shadow-transparent p-2 md:p-0  bg-gray-50 md:bg-0 w-full lg:w-auto lg:flex-grow lg:flex md:items-center ${nav?"":"hidden"}`}>
-          <ul className="flex flex-col mx-auto lg:flex-row md:items-center text-xl">
+        <div class="w-full  md:w-auto md:flex-grow md:flex md:items-center">
+          <ul class="flex flex-col mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:mt-0 md:pt-0 md:mr-4 lg:mr-8 md:border-0">
             <li className=" block hover:opacity-70 py-1 px-2 md:px-4 md:text-lg lg:text-xl">
               Home
             </li>
             <li className=" block hover:opacity-70 py-1 px-2 md:px-4 md:text-lg lg:text-xl">
               Place to Stay
             </li>
-            <li className="  block hover:opacity-70 py-1 px-2 md:px-4 md:text-lg lg:text-xl">
+            <li className=" block hover:opacity-70 py-1 px-2 md:px-4 md:text-lg lg:text-xl">
               NFTs
             </li>
             <li className=" block hover:opacity-70 py-1 px-2 md:px-4 md:text-lg lg:text-xl">
               Community
             </li>
           </ul>
-
-          <button className="lg:px-10 lg:px-6 lg:w-auto w-full lg:py-4 py-2 bg-primary text-white hover:bg-white hover:border-primary hover:border-2 hover:text-primary transition-all duration-500 ease-in  rounded-xl">
-            Connect Wallet
-          </button>
+          <ul class="flex flex-col mt-4 -mx-4 pt-4 border-t md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0">
+            <li>
+              <a class="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">
+                Link
+              </a>
+            </li>
+            <li>
+              <a
+                class="block px-4 py-1 md:p-2 lg:px-4 text-purple-600"
+                href="#"
+                title="Active Link"
+              >
+                Active Link
+              </a>
+            </li>
+            <li>
+              <a class="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">
+                Link
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 
-export default Navbar;
+export default Test;
