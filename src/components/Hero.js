@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 import mbToken from "../assets/mbtoken-white.png";
 import metamask from "../assets/metamask-white.png";
 import opensea from "../assets/opensea-white.png";
-import Modal from "./Modal";
+
 
 const Hero = () => {
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="container">
       <Navbar />
       <HeroMain />
-      <Modal/>
+    
       </div>
       <div className="absolute p-1 left-0 right-0 bottom-0 w-full  bg-primary md:flex justify-center md:justify-around items-center ">
         <div>

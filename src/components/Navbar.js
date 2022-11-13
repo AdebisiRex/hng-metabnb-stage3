@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+//components
+import Modal from "./Modal"
+
 //images
 import metalogo from "../assets/metalogo.png";
 import metabnb from "../assets/metabnb.png";
@@ -70,6 +73,7 @@ const Navbar = () => {
           >
             Connect Wallet
           </button>
+          <Modal/>
         </div>
       </nav>
     </>
