@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 //components
 import Modal from "./Modal"
@@ -18,8 +19,11 @@ const Navbar = () => {
         role="navigation"
       >
         <div title="MetaBNB Home" className="flex items-center relative">
+          <Link to={"/"}>
+          
           <img className="inline-block" src={metalogo} alt="" />
           <img className="inline-block ml-2" src={metabnb} alt="" />
+          </Link>
         </div>
 
         <div title="Toggle Navbar" className="lg:hidden">
@@ -53,7 +57,7 @@ const Navbar = () => {
         >
           <ul className="flex flex-col mx-auto lg:flex-row md:items-center text-xl">
             <li className=" block hover:opacity-70 py-1 px-2 md:px-4 md:text-lg lg:text-xl">
-              Home
+             <Link> Home</Link>
             </li>
             <li className=" block hover:opacity-70 py-1 px-2 md:px-4 md:text-lg lg:text-xl">
               <Link to="/place-to-stay">Place to Stay</Link>
