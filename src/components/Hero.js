@@ -13,7 +13,7 @@ import opensea from "../assets/opensea-white.png";
 const Hero = () => {
   return (
     <div className="relative text-redRose h-screen md:pt-4 p-1 pt-2">
-      <div className="container">
+      <div className="side">
       <Navbar />
       <HeroMain />
     

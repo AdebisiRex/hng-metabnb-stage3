@@ -9,7 +9,7 @@ import instagram from "../assets/instagram.png";
 const Footer = () => {
   return (
     <div className=" bg-dark py-8  ">
-      <div className=" container text-center md:text-left grid grid-cols-12 items-center h-full">
+      <div className="side text-center md:text-left grid grid-cols-12 items-center h-full">
         <div className=" order-last md:order-first text-white col-span-12 lg:col-span-4">
           <div className="mb-16 mt-4">
             <img className="inline-block" src={metalogo} alt="" />

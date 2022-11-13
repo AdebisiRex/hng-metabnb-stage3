@@ -5,15 +5,15 @@ const FilterNav = () => {
   return (
     <div className='lg:mt-24 mt-12 mb-4 md:flex justify-between'>
         <ul className={`md:flex ${showFilter?"hidden":""}`}>
-            <li className='md:mr-12 my-3'>Restaurant</li>
-            <li className='md:mr-12 my-3'>Cottage</li>
-            <li className='md:mr-12 my-3'>Castle</li>
-            <li className='md:mr-12 my-3'>Fantasy city</li>
-            <li className='md:mr-12 my-3'>Fantasy city</li>
-            <li className='md:mr-12 my-3'>beach</li>
-            <li className='md:mr-12 my-3'>Cabins</li>
-            <li className='md:mr-12 my-3'>Off Grid</li>
-            <li className='md:mr-12 my-3'>Farm</li>
+            <li className='md:mr-8 my-3'>Restaurant</li>
+            <li className='md:mr-8 my-3'>Cottage</li>
+            <li className='md:mr-8 my-3'>Castle</li>
+            <li className='md:mr-8 my-3'>Fantasy city</li>
+            <li className='md:mr-8 my-3'>Fantasy city</li>
+            <li className='md:mr-8 my-3'>beach</li>
+            <li className='md:mr-8 my-3'>Cabins</li>
+            <li className='md:mr-8 my-3'>Off Grid</li>
+            <li className='md:mr-8 my-3'>Farm</li>
         </ul>
         <button onClick={()=>setshowFilter(!showFilter)} className='flex items-center rounded-lg p-2 px-4 border border-dark'>
 

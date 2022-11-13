@@ -15,7 +15,7 @@ import image8 from "../assets/Frame 151-6.png"
 const Inspiration = () => {
     let imageArray =[image1,image2, image3, image4, image5,image6, image7, image8]
   return (
-    <div className='md:py-12 py-2 container  '>
+    <div className='md:py-12 py-2 side  '>
         <h1 className='font-bold text-2xl  md:text-4xl text-center mb-8 '>Inspiration for your next adventure</h1>
         <div className=''>
 

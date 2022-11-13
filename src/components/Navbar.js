@@ -7,7 +7,7 @@ import Modal from "./Modal"
 //images
 import metalogo from "../assets/metalogo.png";
 import metabnb from "../assets/metabnb.png";
-import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
@@ -77,9 +77,9 @@ const Navbar = () => {
           >
             Connect Wallet
           </button>
-          <Modal/>
         </div>
       </nav>
+          <Modal/>
     </>
   );
 };

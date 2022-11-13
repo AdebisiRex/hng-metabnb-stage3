@@ -11,7 +11,7 @@ const HeroMain = () => {
     <>
     <div className="md:grid mt-24  px-2 items-center grid-cols-12 md:gap-16 gap-4">
         <div className="lg:col-span-8 md:col-span-9 ">
-          <h1 className=" mb-10 text-4xl lg:text-6xl leading-snug">
+          <h1 className=" mb-10 text-4xl lg:text-5xl leading-snug">
             Rent a <span className="text-primary font-semibold">Place</span>{" "}
             away from <span className="text-primary font-semibold">Home</span>{" "}
             in the <span className="text-primary font-semibold">Metaverse</span>

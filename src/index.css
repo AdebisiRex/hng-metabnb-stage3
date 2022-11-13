@@ -4,11 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
-  @apply md:mx-10 lg:mx-24 mx-2;
+.side{
+  @apply md:mx-10 lg:mx-16 ;
 }
 .card-container{
-  @apply grid grid-cols-12 lg:gap-4 md:gap-2 gap-1;
+  @apply grid grid-cols-12 lg:gap-4 md:gap-2 gap-1 py-4;
 }
 .card{
   @apply col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 rounded-xl shadow border p-4

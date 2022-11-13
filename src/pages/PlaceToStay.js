@@ -20,7 +20,7 @@ import FilterNav from '../components/FilterNav'
 const PlaceToStay = () => {
     let cardImages = [image1, image2, image3, image4, image5, image6, image7, image8,image9, image10, image11,image12]
   return (
-    <div className='container w-full  p-2 box-border py-4 lg:py-12'>
+    <div className='side    py-4'>
         <Navbar/>
         <FilterNav/>
 
